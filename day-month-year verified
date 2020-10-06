@@ -1,0 +1,44 @@
+question: Make a program which has 3 input scores, first input is a day, second is month, then year. decide these day is valid or no.
+data1 = str(input())
+data1 = data1.split()
+data1 = list(map(int, data1))
+
+tanggal = data1[0]
+bulan = data1[1]
+tahun = data1[2]
+
+if bulan == 1:
+    hari = 31
+elif bulan == 2:
+    if (tahun % 4 == 0 and tahun % 100 != 0) or tahun % 400 == 0:
+        hari = 29
+    else:
+        hari = 28
+
+elif bulan == 3:
+    hari = 31
+elif bulan == 4:
+    hari = 30
+elif bulan == 5:
+    hari = 31
+elif bulan == 6:
+    hari = 30
+elif bulan == 7:
+    hari = 31
+elif bulan == 8:
+    hari = 31
+elif bulan == 9:
+    hari = 30
+elif bulan == 10:
+    hari = 31
+elif bulan == 11:
+    hari = 30
+elif bulan == 12:
+    hari = 31
+else:
+    hari = 0
+
+if tanggal <= hari and bulan <= 12:
+    print("valid")
+else:
+    print("tidak valid")
