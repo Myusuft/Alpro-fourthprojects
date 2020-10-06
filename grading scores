@@ -1,0 +1,15 @@
+question: input three scores, terms to pass the scores must be >50 and doesnt matter if there ara one score <= 40. then the program will show pass or no.
+data1 = str(input())
+data1 = data1.split()
+data1 = list(map(int, data1))
+
+a = data1[0]
+b = data1[1]
+c = data1[2]
+
+if a < b and b > c:
+    print(c)
+elif b < c:
+    print(b)
+else:
+    print(a)
