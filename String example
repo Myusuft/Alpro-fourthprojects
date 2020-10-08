@@ -1,0 +1,6 @@
+x = 25
+print( "halo" , "umur" , "saya" , x, "thn" )
+print( "halo" )
+print( "selamat pagi" )
+print( "halo" , end= "" )
+print( "selamat pagi" )
