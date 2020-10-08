@@ -1,0 +1,7 @@
+masukan = input()
+list_str_masukan = masukan.split()
+list_float_masukan = list(map(float, list_str_masukan))
+print(list_float_masukan)
+
+luas_permukaan = 2 * 3.14 * list_float_masukan[0] * (list_float_masukan[0] + list_float_masukan[1])
+print(luas_permukaan)
